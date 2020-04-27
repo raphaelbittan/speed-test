@@ -1,0 +1,17 @@
+[
+	/*
+	 * If Server can only be reached via HTTP or HTTPS,
+	 * Then "server" (URL) must be absolute:
+	 * e.g: "http://www.example.com/" or "https://www.secure-example.com/"
+	 * Otherwise start URL with "//":
+	 * e.g: "//www.example.com/"
+	 */
+	{
+		"name": "Speedtest Demo Server (Helsinki)",
+		"server" :"//fi.openspeed.org/",
+		"dlURL" :"garbage.php",
+		"ulURL" :"empty.php",
+		"pingURL" :"empty.php",
+		"getIpURL" :"getIP.php"
+	}
+]
