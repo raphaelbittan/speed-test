@@ -4,7 +4,7 @@
 	 * Then "server" (URL) must be absolute:
 	 * e.g: "http://www.example.com/" or "https://www.secure-example.com/"
 	 * Otherwise start URL with "//":
-	 * e.g: "//www.example.com/"
+	 * e.g: "//www.both-example.com/"
 	 */
 	{
 		"name": "Speedtest Demo Server (Helsinki)",
