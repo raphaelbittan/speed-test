@@ -6,7 +6,7 @@
 To download LibreSpeed from the docker hub, use this command:
 
 ```
-docker build -n speedtest .
+docker build -t speedtest .
 ```
 
 You will now have a new docker image called `speedtest`.
@@ -157,7 +157,7 @@ Here's a list of additional environment variables available in this mode:
 ###### Example:
 This command starts LibreSpeed in backend mode, with the default settings, on port 80:
 ```
-docker run -e MODE=backend -p 80:80 -it adolfintel/speedtest
+docker run -e MODE=backend -p 80:80 -it speedtest
 ```
 
 ### Frontend mode
