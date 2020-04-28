@@ -1,10 +1,6 @@
 ![LibreSpeed Logo](https://github.com/librespeed/speedtest/blob/master/.logo/logo3.png?raw=true)
 
-# LibreSpeed - Docker Version
-
-This is the Docker version of LibreSpeed.
-
-# LibreSpeed - Docker Documentation
+# Documentation
 
 ## Building from Dockerfile
 To download LibreSpeed from the docker hub, use this command:
@@ -37,13 +33,13 @@ If telemetry is enabled, a stats page will be available at `http://your.server/r
 This command starts LibreSpeed in standalone mode, with the default settings, on port 80:
 
 ```
-docker run -e MODE=standalone -p 80:80 -it adolfintel/speedtest
+docker run -e MODE=standalone -p 80:80 -it speedtest
 ```
 
 This command starts LibreSpeed in standalone mode, with telemetry, ID obfuscation and a stats password, on port 80:
 
 ```
-docker run -e MODE=standalone -e TELEMETRY=true -e ENABLE_ID_OBFUSCATION=true -e PASSWORD="botnet!123" -p 80:80 -it adolfintel/speedtest
+docker run -e MODE=standalone -e TELEMETRY=true -e ENABLE_ID_OBFUSCATION=true -e PASSWORD="botnet!123" -p 80:80 -it speedtest
 ```
 And now the test results will be stored and we will get our test ID at the end of the test (along with the other data)
 
@@ -212,5 +208,5 @@ Here's a list of additional environment variables available in this mode:
 ###### Example
 This command starts LibreSpeed in frontend mode, with a given `servers.json` file, and with telemetry, ID obfuscation, and a stats password:
 ```
-docker run -e MODE=frontend -e TELEMETRY=true -e ENABLE_ID_OBFUSCATION=true -e PASSWORD="botnet!123" -v ./my_servers.json:/servers.json -p 80:80 -it speedtest
+docker run -e MODE=frontend -e TELEMETRY=true -e ENABLE_ID_OBFUSCATION=true -e PASSWORD="password!123" -v ./my_servers.json:/servers.json -p 80:80 -it speedtest
 ```
